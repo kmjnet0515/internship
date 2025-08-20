@@ -1,0 +1,7 @@
+train: /usr/src/app/Dataset10/train/images
+val: /usr/src/app/Dataset10/val/images
+
+nc: 7
+
+names: ['Anchor','SeaReaf', 'SeaSquirt', 'WaterDrop', 'WhirlPool', 'FishingHook','WhiteMullet']
+

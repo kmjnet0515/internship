@@ -1,0 +1,17 @@
+docker run --gpus all -it --rm --shm-size=32g -v C:\Users\smpi9\Downloads\yolo_project:/usr/src/app yolov5-custom
+yolov5 학습방식
+python train.py --img 1280 --batch 4 --epochs 50 --data /usr/src/app/data.yaml --weights yolo5s.pt --name yolo_custom9 --workers 6
+yolov11 학습방식
+yolo task=detect mode=train model=yolo11s.pt data=/usr/src/app/data.yaml epochs=30 imgsz=1280 batch=4 name=yolo_7nc workers=4
+
+uvicorn main:app --host 0.0.0.0 --port 8000
+
+uvicorn singleCamera3000mmx2100mm_main:app --host 0.0.0.0 --port 8000
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+cd C:\Users\smpi9\Downloads\yolo_project\project\frontend
+npm run dev
+
+
+h값 증강, 기하학적 변화 주기
+yolo task=detect mode=train model=yolo12m.pt data=/usr/src/app/data.yaml epochs=100 imgsz=1280 batch=8 rect=True hsv_h=0.1 degrees=5 translate=0.15 scale=0.15 shear=5
+docker run --gpus all -it --rm --shm-size=64g -v G:\kimminjae:/usr/src/app python_yolo

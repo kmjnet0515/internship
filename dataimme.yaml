@@ -1,0 +1,6 @@
+train: /usr/src/app/Dataset13/train/images
+val: /usr/src/app/Dataset13/val/images
+
+nc: 11
+
+names: ['Anchor', 'SeaReaf', 'SeaSquirt', 'WaterDrop', 'WhirlPool',"FishingHook",'WhiteMullet','SubmarineVolcano', 'DeepSeaHotSpring', 'StaticStair', 'DynamicStair']
